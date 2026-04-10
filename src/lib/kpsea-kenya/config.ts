@@ -1,0 +1,45 @@
+// KPSEA Kenya Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM124",
+  slug: "kpsea-kenya",
+  name: "KPSEA Kenya",
+  fullName: "KPSEA",
+  alias: "KPSEA",
+  family: "Kenya Exams",
+  category: "School exams",
+  subcategory: "Primary assessment",
+  country: "Kenya",
+  region: "Africa",
+  languages: ["English","Kiswahili"],
+  estimatedAnnualTakers: "large",
+  testingWindow: "Nov",
+  schedulePattern: "Annual",
+  ageGroup: "11-14",
+  targetUser: "School student",
+  delivery: "Paper-based",
+  questionTypes: ["Objective + short answer"],
+  adaptivity: "Linear",
+  sections: "Core subjects",
+  scoringMode: "Scale score",
+  essayOrSpeaking: "No",
+  ipRisk: "Low",
+  contentReuse: "school_subjects",
+  uiEngine: "paper_objective",
+  monetizationPotential: "Medium",
+  tier: "Tier 6",
+  launchWave: "Wave 8",
+  themeColor: "#D97706",
+  themeColorDark: "#B45309",
+  localizationComplexity: "Medium",
+  offlineNeeded: true,
+  mobileFirst: true,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;

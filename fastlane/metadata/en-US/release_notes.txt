@@ -1,0 +1,5 @@
+Initial release of Koydo KPSEA Kenya Prep.
+
+• Practice questions
+• Score tracking
+• AI tutor integration
