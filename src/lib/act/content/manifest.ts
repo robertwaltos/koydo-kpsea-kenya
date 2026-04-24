@@ -20,8 +20,8 @@ export interface TopicManifest {
   title: string;
   icon: string;
   color: string;
-  questionTarget: number;
-  activityTypes: ActivityType[];
+  minQuestionCount: number;
+  requiredActivityTypes: ActivityType[];
 }
 
 export interface ContentManifest {
@@ -44,8 +44,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Mathematics",
     icon: "🔢",
     color: "#1E40AF",
-    questionTarget: 800,
-    activityTypes: ["multiple_choice", "whiteboard", "numeric_input"],
+    minQuestionCount: 800,
+    requiredActivityTypes: ["multiple_choice", "whiteboard", "numeric_input"],
   },
   {
     id: "sciences",
@@ -53,8 +53,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Sciences",
     icon: "🔬",
     color: "#059669",
-    questionTarget: 700,
-    activityTypes: ["multiple_choice", "reading_passage"],
+    minQuestionCount: 700,
+    requiredActivityTypes: ["multiple_choice", "reading_passage"],
   },
   {
     id: "languages",
@@ -62,8 +62,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Language & Literature",
     icon: "📖",
     color: "#D97706",
-    questionTarget: 600,
-    activityTypes: ["multiple_choice", "essay", "cloze_deletion"],
+    minQuestionCount: 600,
+    requiredActivityTypes: ["multiple_choice", "essay", "cloze_deletion"],
   },
   {
     id: "social-studies",
@@ -71,8 +71,8 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Social Studies",
     icon: "🌍",
     color: "#DC2626",
-    questionTarget: 500,
-    activityTypes: ["multiple_choice"],
+    minQuestionCount: 500,
+    requiredActivityTypes: ["multiple_choice"],
   }
   ],
 };
